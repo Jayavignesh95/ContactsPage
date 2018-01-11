@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Login App</title>
+	<style type="text/css">
+	
+	#Regiter_Form, #Login_Form{
+    width:50%;
+    height:50%;
+    border:1px solid red;
+    margin-right:100px;
+    float:left;
+}
+.child_div_1{
+    float:left;
+    margin-right:5px;
+}
+	</style>
+</head>
+<body>
+
+<div>
+<li> <ul><a href="/">Home</a></ul>
+	<ul><a href="/logout">Logout</a></ul>	
+    <ul><a href="/web/welcome.jsp">Profile</a></ul> 
+</li>
+</div>
+  <div id='Regiter_Form'>
+
+  	 <h2>Register</h2>
+  	     <label>Name :</label>
+  	     <form action="/register" method="POST">
+  	     <input type="text"  name="user"  >
+  	     <label>Password :</label>
+  	     <input type="text" name="password" >
+  	      <input type="submit" >
+  	      </form>
+  </div>
+  <div id='Login_Form'>
+
+  	 <h2>Login</h2>
+  	     <label>Name :</label>
+  	     <form action="/login" method="POST">
+  	     <input type="text"  name="user"  >
+  	     <label>Password :</label>
+  	     <input type="text" name="password" >
+  	      <input type="submit" >
+  	      </form>
+  </div>
+</body>
+</html>

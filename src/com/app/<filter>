@@ -1,0 +1,19 @@
+<filter>
+	<filter-name>SessionFilter</filter-name>
+	<filter-class>com.app.UserFilter</filter-class>
+	<init-param>
+		<param-name>avoid-urls</param-name>
+		<param-value>/index.jsp</param-value>
+		
+	</init-param>
+	
+</filter>
+<filter-mapping>
+	<filter-name>SessionFilter</filter-name>
+	<url-pattern>/web/*</url-pattern>
+		<url-pattern>/app/</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+
+</filter-mapping>
+	
